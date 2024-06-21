@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Wrapper for the calculator -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:outlineAmbientShadowColor="#ea5215"
+        android:padding="16dp">
+
+        <!-- Your existing layout components here -->
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingBottom="16dp"
+            android:text="Age Calculator"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/textViewTanggalLahirLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masukkan Tanggal Lahir"
+            android:textSize="16sp"
+            android:paddingTop="8dp" />
+
+        <EditText
+            android:id="@+id/editTextTanggalLahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Masukkan Tanggal Lahir-Bulan-Tahun"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/textViewTanggalHariIniLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masukkan Tanggal Hari Ini"
+            android:textSize="16sp"
+            android:paddingTop="16dp" />
+
+        <EditText
+            android:id="@+id/editTextTanggalHariIni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Masukkan Tanggal Lahir-Bulan-Tahun"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/buttonHitung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hitung"
+            android:backgroundTint="#ea5215"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:backgroundTint="#ea5215"
+            android:textColor="@android:color/black"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewHasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="16dp"/>
+
+    </LinearLayout>
+
+    <!-- Footer with copyright information -->
+    <TextView
+        android:id="@+id/textViewFooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="© 2024 Aceng Jaelani. All rights reserved."
+        android:textColor="@android:color/darker_gray"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="16dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<!-- res/values/colors.xml -->
+<resources>
+    <color name="design_default_color_primary">#6200EE</color>
+    <color name="design_default_color_primary_dark">#3700B3</color>
+    <color name="design_default_color_secondary">#03DAC5</color>
+    <color name="design_default_color_primary_variant">#3700B3</color>
+    <color name="orange">#FFA500</color>
+    <color name="transparent_orange">#80FFA500</color> <!-- 50% transparan -->
+    <color name="navy">#000080</color> <!-- Warna navy -->
+</resources>
